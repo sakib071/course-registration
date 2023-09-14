@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/GnpGLMw/Rectangle-2.png",
+        "course_name": "Introduction to Web Dev",
+        "credit_hour": 3,
+        "price": "$199.99",
+        "course_details": "Learn the basic of web development. Build responsive websites and web applications."
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/hWj8zQg/Rectangle-2-1.png",
+        "course_name": "Data Science Essentials",
+        "credit_hour": 4,
+        "price": "$249.99",
+        "course_details": "Explore data science. Acquire skills in data visualization, statistical analysis, and predictive modeling."
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/FnFhJdX/Rectangle-2-2.png",
+        "course_name": "Graphic Design Mastery",
+        "credit_hour": 2,
+        "price": "$149.99",
+        "course_details": "Master graphic design tools. Learn typography, color theory, and layout design."
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/4J7CmpH/Rectangle-2-3.png",
+        "course_name": "Mobile App Development",
+        "credit_hour": 3,
+        "price": "$199.99",
+        "course_details": "Build mobile apps for iOS and Android. Create user-friendly interfaces. Learn more, Build more"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/Hgc195T/Rectangle-2-4.png",
+        "course_name": "Business Analytics",
+        "credit_hour": 3,
+        "price": "$199.99",
+        "course_details": "Harness data for informed business decision-making. Analyze financial data and market trends."
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/GnpGLMw/Rectangle-2.png",
+        "course_name": "Full Stack Web Development",
+        "credit_hour": 4,
+        "price": "$299.99",
+        "course_details": "Master front-end and back-end web development. Build dynamic web applications."
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co/hWj8zQg/Rectangle-2-1.png",
+        "course_name": "Machine Learning Fundamentals",
+        "credit_hour": 3,
+        "price": "$229.99",
+        "course_details": "Dive into machine learning. Explore algorithms and model training."
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co/FnFhJdX/Rectangle-2-2.png",
+        "course_name": "Digital Marketing Strategies",
+        "credit_hour": 2,
+        "price": "$149.99",
+        "course_details": "Learn digital marketing strategies. Master SEO and social media marketing."
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co/4J7CmpH/Rectangle-2-3.png",
+        "course_name": "iOS App Development",
+        "credit_hour": 3,
+        "price": "$249.99",
+        "course_details": "Develop iOS applications for iPhone and iPad. Build interactive and user-friendly apps."
+    }
+]
