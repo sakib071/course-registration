@@ -1,18 +1,19 @@
 import { useState } from "react";
-import Card from "../Card/Card";
 import { useEffect } from "react";
+import Card from "../Card/Card";
+// import CourseCart from "../CourseCart/CourseCart";
+import PropTypes from 'prop-types'
 
-const Courses = () => {
+const Courses = ({ addToCart }) => {
 
     const [courses, setCourses] = useState([]);
+    // const [cart, setCart] = useState([]);
 
-    useEffect((
-        () => {
-            fetch('course.json')
-                .then(res => res.json())
-                .then(data => setCourses(data))
-        }
-    ), []);
+    useEffect(() => {
+        fetch('course.json')
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, []);
 
     return (
         <div className="grid grid-cols-3 gap-5 mx-auto">
@@ -21,10 +22,15 @@ const Courses = () => {
                     <Card
                         key={course.id}
                         course={course}
+                        addToCart={addToCart}
                     ></Card>)
             }
-        </div>
+        </div >
     );
 };
+
+Courses.propTypes = {
+    addToCart: PropTypes.func.isRequired
+}
 
 export default Courses;
