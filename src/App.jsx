@@ -7,23 +7,27 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-
   const notify = () => toast.warn("Can't add more than 20 credit hours");
   const [cart, setCart] = useState([]);
   const maxCreditHour = 20;
 
-
   const addToCart = course => {
-    console.log(course);
-    const totalCreditHour = cart.reduce((total, course) => total + course.credit_hour, 0);
-    const courseCreditHour = course.credit_hour;
-    if (totalCreditHour + courseCreditHour <= maxCreditHour) {
-      const newCart = [...cart, course];
-      setCart(newCart);
+    console.log(course); const isCoursePresent = cart.find(cartItem => cartItem.id === course.id)
+    if (isCoursePresent) {
+      toast.error("Already Added to cart");
     }
     else {
-      notify();
+      const totalCreditHour = cart.reduce((total, course) => total + course.credit_hour, 0);
+      const courseCreditHour = course.credit_hour;
+      if (totalCreditHour + courseCreditHour <= maxCreditHour) {
+        const newCart = [...cart, course];
+        setCart(newCart);
+      }
+      else {
+        notify();
+      }
     }
+
   }
 
   return (
