@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Card from "../Card/Card";
-// import CourseCart from "../CourseCart/CourseCart";
 import PropTypes from 'prop-types'
 
 const Courses = ({ addToCart }) => {
 
     const [courses, setCourses] = useState([]);
-    // const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('course.json')

@@ -1,8 +1,14 @@
-# React + Vite
+# Course Registration App using REACT + Vite
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Here I will discuss about three features of my project Course Registration App.**
+- In my project users can buy courses which are available in the website.
+- In this project a user can check how many courses he/she added.
+- They can easily that an overview of every course details such as course name, credit hours, price.
+- They can know about the total price of courses they have bought.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Discuss how you managed the state in your assignment project.
+**Here I used two types of state, they are,**
+- **Courses**: this one used for fetching data from JSON file.
+- **Cart**: this one used to add selected courses to the cart

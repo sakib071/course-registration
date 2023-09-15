@@ -3,7 +3,7 @@ import { BsBook } from 'react-icons/bs';
 import PropTypes from 'prop-types'
 
 
-const Card = ({ course, addToCart, notify }) => {
+const Card = ({ course, addToCart }) => {
     const { img, course_name, price, credit_hour, course_details } = course;
     return (
         <div className="card w-80 bg-base-100 shadow-xl p-5 rounded-xl">
@@ -18,7 +18,7 @@ const Card = ({ course, addToCart, notify }) => {
                 </div>
 
                 <div className="flex justify-center mt-4">
-                    <button onClick={() => { addToCart(course), notify }} className="bg-blue-600 text-white px-28 py-1.5 rounded-md hover:bg-blue-700 transition-colors">Select</button>
+                    <button onClick={() => addToCart(course)} className="bg-blue-600 text-white px-28 py-1.5 rounded-md hover:bg-blue-700 transition-colors">Select</button>
                 </div>
             </div>
         </div>
@@ -28,7 +28,6 @@ const Card = ({ course, addToCart, notify }) => {
 Card.propTypes = {
     course: PropTypes.object.isRequired,
     addToCart: PropTypes.func.isRequired,
-    notify: PropTypes.func.isRequired
 }
 
 export default Card;

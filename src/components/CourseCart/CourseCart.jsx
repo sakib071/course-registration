@@ -13,7 +13,6 @@ const CourseCart = ({ cart }) => {
             <div className="card w-80 bg-base-100 shadow-xl p-5 rounded-xl">
                 <div className="card-body space-y-3">
                     <h2 className="card-title text-lg font-bold text-blue-600">Credit Hour Remaining : {creditHoursLeft}hr</h2>
-                    {/* <h2>length: {cart.length}</h2> */}
                     <hr />
                     <p className="text-xl font-bold">Course Name</p>
                     <ul className="text-gray-500 list-decimal list-inside">
